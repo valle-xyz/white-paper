@@ -1,0 +1,68 @@
+// compileExpanded: ../style.css
+/*
+ * Theme Name: White Paper by Valle
+ * Theme URI: http://seahouse.me
+ * Author:  Webdesign & Entwicklung Seahouse.me
+ * Author URI: http://seahouse.me
+ * Description: Seahouse
+ * Version: 0.4
+ * License: All Rights reserved to Seahouse
+ * License URI: none
+ */
+
+// Colors
+
+
+@import "variables/breakpoints"
+@import "variables/colors"
+@import "variables/typography"
+
+@import "mixins/mixin"
+
+@import "layout/header"
+@import "layout/main_menu"
+@import "layout/footer"
+@import "layout/wp_defaults"
+
+@import "templates/template"
+
+@import "template-parts/template_part"
+
+
+@font-face
+	font-family: "Freebooter Script"
+	src: url("css/fonts/FREEBSC_.ttf")
+
+
+body
+	overflow: scroll
+	height: 100%
+
+	font-size: $baseline * 1.1/1.5
+	font-family: $font-family
+	line-height: $baseline
+	color: black
+	background-color: $color-background
+
+	// Optimization
+	text-rendering: optimizeLegibility
+	text-rendering: geometricPrecision
+	font-smooth: always
+
+	font-smoothing: antialiased
+	-moz-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	-webkit-font-smoothing: antialiased
+	-webkit-font-smoothing: subpixel-antialiased
+
+	margin: 0
+	padding: 0
+
+a
+	text-decoration: none
+p
+	margin: 0 0 $baseline 0
+ul
+	margin: 0
+
+// @media only screen and (max-width: 48.0625em)
